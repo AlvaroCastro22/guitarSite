@@ -1,4 +1,4 @@
-export default function Guitar({props,addCuenta,addCarrito}){
+export default function Guitar({props,addCarrito}){
     const {name,image,description,price,id} = props;
     const handleClick = () =>{
         console.log(price);
@@ -15,7 +15,7 @@ export default function Guitar({props,addCuenta,addCarrito}){
                     <button 
                         type="button"
                         className="btn btn-dark w-100"
-                        onClick={()=>{addCarrito(id)}}
+                        onClick={()=>{addCarrito(props)}}
                     >Agregar al Carrito</button>
                 </div>
             </div>
